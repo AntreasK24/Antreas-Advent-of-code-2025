@@ -16,11 +16,11 @@ with open("input.txt") as file:
         direction = output[0]
         steps = int(output[1])
 
-        if(direction == "L"):
+        if(direction == "R"):
             head = head + steps
             while(head > 99):
                 head = head - 100
-        elif(direction == "R"):
+        elif(direction == "L"):
             head = head - steps
             while(head < 0):
                 head = head + 100
